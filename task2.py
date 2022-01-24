@@ -29,3 +29,12 @@ task2.txt contents:
 
 (3 points)
 """
+
+f = open("task2.txt", "w")
+while True:
+    x = input('Enter a number:')
+    z = str(x) + '\n'
+    f.write(z)
+    if x =='':
+        break
+

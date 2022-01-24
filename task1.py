@@ -1,0 +1,5 @@
+f = open("task.txt", "w")
+x = input('What is your name?')
+y = input('What is your email address?')
+f.write(x)
+f.write(y)

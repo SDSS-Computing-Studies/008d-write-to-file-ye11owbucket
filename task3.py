@@ -16,3 +16,16 @@ task3.txt contents:
 ["frog","french","puppy","escalate","ice"]
 
 '''
+import json
+f = open("task3.txt", "w")
+count = 0
+z = []
+while True:
+    x = input('Enter a word:')
+    z.append(x)
+    count = count + 1
+    if count == 5:
+        outputData = json.dumps(z)
+        f.write(outputData)
+        break
+    
